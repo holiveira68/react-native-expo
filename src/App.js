@@ -1,10 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, ScrollView } from 'react-native';
 import CardUser from './components/CardUser';
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       <View style={styles.box}>
         <Image style={styles.logo} 
         source={'https://static.vecteezy.com/system/resources/previews/010/071/559/non_2x/barbershop-logo-barber-shop-logo-template-vector.jpg'}/>
@@ -32,7 +32,7 @@ export default function App() {
             
       </View>
       <StatusBar style="auto" />
-    </View>
+    </ScrollView>
     
   );
 }
@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
       gap: 20
   },
   box2:{
-    flex: 5,
+    width: '100%',
     backgroundColor: 'rgba(102, 138, 99, 1)',
     alignItems:'center',
     
