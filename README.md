@@ -36,7 +36,7 @@ R: Node Package Manager - Gerenciador de pacotes do Node - permite instalar/atua
 - O StyleSheet do React Native tem todas as propriedades da Web? (CSS)
 R: Não. Mas possui as principais, já que o foco é Mobile.
 
-- Todas as propriedades do StyleSheet funcionam para iOS e Android?
+- Todas as propriedades do StyleSheet do React Nativefuncionam para iOS e Android?
 R: Não. Algumas propriedades são específicas para iOS e outras para Android, mas a maioria funciona para os dois sistemas.  
 
 ### Instalação do Expo
