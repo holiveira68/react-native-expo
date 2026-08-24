@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
         gap:10
    },
    foto:{
-    height:350,
+    height:500,
     width: '100%',
     maxWidth: 400,
     borderRadius:20,

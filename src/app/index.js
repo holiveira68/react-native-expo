@@ -1,8 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, ScrollView } from 'react-native';
-import CardUser from './components/CardUser';
+import CardUser from '../components/CardUser';
 
-export default function App() {
+export default function HomeScreen() {
   return (
     <ScrollView style={styles.container}>
       <View style={styles.box}>

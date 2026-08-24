@@ -39,6 +39,15 @@ R: Não. Mas possui as principais, já que o foco é Mobile.
 - Todas as propriedades do StyleSheet do React Nativefuncionam para iOS e Android?
 R: Não. Algumas propriedades são específicas para iOS e outras para Android, mas a maioria funciona para os dois sistemas.  
 
+- Quais as principais formas de navegação com Expo Router?
+R:
+1. Stack - navegação em pilha (vai voltando na ordem em que entrou)
+2. Tabs - navegação com ícones no bottom (tela inicial)
+3. Drawer - navegação com menu lateral (Drawer = gaveta em inglês)
+4. Modal - abre a tela em cima da atual (fecha deslizando para baixo)
+
+
+
 ### Instalação do Expo
 npx create-expo-app@latest --template
 Opções:
@@ -46,5 +55,13 @@ Opções:
 - nome do app
 - For learning with Expo Go (SDK 54) ** mais estável do que a v. 57
 Vai criar a estrutura de pastas do projeto
+
+Instalação do Expo Router
+
+- https://docs.expo.dev/router/installation
+- Fazer etapas 1,2,3
+- Criar pasta app dentro de src
+- Colocar a tela inicial (componente) na pasta app (index.js)
+- Rodar a etapa 6 (npx expo start --clear)
 
 

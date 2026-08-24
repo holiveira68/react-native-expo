@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image,ScrollView } from 'react-native';
-import CardFlix from './components/CardFlix';
-import Logo from './images/IFFlix.png';
+import { StyleSheet, Text, View, Image, ScrollView } from 'react-native';
+import CardFlix from '../components/CardFlix';
+import Logo from '../../assets/IFFlix.png';
 
 export default function Ifflix() {
   return (
