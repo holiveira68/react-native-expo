@@ -50,7 +50,7 @@ R: É nela que ficam as telas (componentes) da aplicação. Cada arquivo dentro 
 R:
 1. Stack - navegação em pilha (vai voltando na ordem em que entrou)
 2. Tabs - navegação com ícones no bottom (tela inicial)
-3. Drawer - navegação com menu lateral (Drawer = gaveta em inglês) - utilizado mais para telas como configurções, perfil, etc.., que não fazem parte do fluxo principal do usuário
+3. Drawer - navegação com menu lateral (Drawer = gaveta em inglês) - utilizado mais para telas como configurações, perfil, etc, que não fazem parte do fluxo principal do usuário
 4. Modal - abre a tela em cima da atual (fecha deslizando para baixo) - variação da navegação Stack
 
 - Posso utilizar mais de uma forma de navegação do Expo Router no mesmo App?
