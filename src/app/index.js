@@ -1,72 +1,47 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image, ScrollView } from 'react-native';
-import CardUser from '../components/CardUser';
+import { Button, View, Text, StyleSheet, ActivityIndicator } from 'react-native';
+import { Link} from 'expo-router';
+import {Image} from 'expo-image'; 
+import {useEffect} from 'react';
+import {useRouter} from 'expo-router';
 
-export default function HomeScreen() {
-  return (
-    <ScrollView style={styles.container}>
-      <View style={styles.box}>
-        <Image style={styles.logo} 
-        source={'https://static.vecteezy.com/system/resources/previews/010/071/559/non_2x/barbershop-logo-barber-shop-logo-template-vector.jpg'}/>
-        <Text style={styles.textologo}> Oliver Barber </Text>
-      </View>
+export default function LoadingScreen() {
+const router = useRouter();
 
-      <View style={styles.box2}>
-        <CardUser 
-          avatar={'https://i.pinimg.com/236x/83/6b/49/836b4947e51fc7fbdf0d9568112a496a.jpg'}
-          name={'Kiko Loureiro'}
-          email={'kiko@gmail.com'}
-        />
-                 
-        <CardUser
-         avatar={'https://i.pinimg.com/236x/61/84/f8/6184f814c0e45527e449f9a5ba8ad6d4.jpg'}  
-         name={'Marcinho Eiras'}
-         email={'eiras@gmail.com'}  
-         />
-         
-        <CardUser
-            avatar={'https://i.pinimg.com/originals/c8/49/e5/c849e5728aa9f4df9f3994bd69001788.jpg'}
-            name={'James Hetfield'}
-            email={'hetfield@gmail.com'} 
+useEffect(()=> {
+    setTimeout(() => {
+        router.replace('/login');
+    }, 2000); 
+}, []);
+
+
+    return (
+        <View style={styles.container}>
+            <Image
+               style={styles.logo}
+                source={require("../../assets/IFFlix.png")}
+               
             />
-            
-      </View>
-      <StatusBar style="auto" />
-    </ScrollView>
-    
-  );
+            <Text>IFFlix</Text>
+            <ActivityIndicator size="large" color="#000000"/>
+             <Text>Carregando...</Text>
+            <Link href="/login" asChild>
+                <Button title="Login" />
+            </Link>
+        </View>
+    )
 }
 
 const styles = StyleSheet.create({
-  container: {
-       flex: 1, // Ocupa toda a tela da view 
-      backgroundColor: '#6670f5',
-  },
-  box:{
-      flex: 1,
-      backgroundColor: '#cabf87ff',
-      padding: 20,
-      flexDirection: 'row',
-      alignItems:'center',
-      gap: 20
-  },
-  box2:{
-    width: '100%',
-    backgroundColor: 'rgba(102, 138, 99, 1)',
-    alignItems:'center',
-    
-  },
-
-  logo:{
-       width: 150,
-       height: 150,
-       borderRadius: 25,
-       fontSize:50
-   },
-   
-   textologo:{
-    fontSize: 50,
-    color: '#5a1717ff',
-   },
-   
+    container: {
+        flex: 1,
+        justifyContent: "center",
+        alignItems: 'center',
+        gap: 20
+    },
+    logo:{
+        width:100,
+        height:100,
+        borderRadius:25,
+        
+    }
 });

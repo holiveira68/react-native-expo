@@ -1,9 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image,ScrollView } from 'react-native';
+import { StyleSheet, Text, View, Image,ScrollView, Button } from 'react-native';
 import CardFlix from '../components/CardFlix';
 import Logo from '../../assets/IFFlix.png';
+import { useRouter} from "expo-router";
 
 export default function UserScreen() {
+  const router = useRouter();
+
+
   return (
     <ScrollView style={styles.container}>
       <View style={styles.box}>
@@ -15,6 +19,9 @@ export default function UserScreen() {
       </View>
 
       <View style={styles.box2}>
+        
+        <Button title="Ir para Home" onPress={() => router.push('/')}/>
+
         <CardFlix
           avatar={'data:image/webp;base64,UklGRrIFAABXRUJQVlA4IKYFAADQGQCdASpcAFwAPpkkplMloSWllqCwEwllAL4EaenQ4EJk89va3NCYJ8cv/A8f3BrUM6VSiQswB9EMvLwx3gJxt/y5WNUJShkBmjLQbmDUqssAPHTe3lWlmLjraMd2BExwPm1sSu0WH7w6ZuL2JzSYNbeI0Qn2fGt4PterJvmuv8USUociAZG7SkOhX/IZdW5Ej7JfyIJR8iAjyVJwlqIyhGP3QmErDT1vatsmDpae86k4rPYY4MJpfXl9qG7pWGomGoh1jxMZdwvwvcJB44rx05c3K6g1gAD+78hCLMvip4dyU5X6WPr1S2bsh3SECXiSfhZgy8U+gvabO+5oKpOoO/1cg4Belu1B06wksImEN8C631bExxPL1Pk2k5f1ac4NHuWbTqnayh1FXUmTCsPvK5iY9Vy4GnkgH15XaLUL99Ca56P57sxYpsRvhdg+r7JW+wgCMbyOjaSTOk64BZSV7PXSge3zFSkzS37VLp4vsFPYogB97ADvVE9fQONkJqclnq3TCezlp17pAoKXXkeEm5bdvuNCVNjahmjN3ehBZbPDN9zcEhwTiAVrXRuhD/YGD7cJItDvP6bLupIa3LwNJfPRpYlSd38mxYpSFBOeA9MnXLBhcVpoXlHhO/86mxcIoejhp8v5M5xW4ZN2zR54qh11IHKpJEzAEgW7qrni7xJKJDAia+EBUZ+R06U3Y0lOqP+fvDMxyB8fylH2L4EfcXbhzrJoX8CYAUEfDEfsfP7eFQEGo4uAZNdsF4xBPBT2KRZaU3fhHQ6keR4LU/ag+8GceAYJQ7KQ8/40oqgYcrp1C6qrtOIlAu2jE4ggGy+nrF/EN8BsGfXQQ4IbTnjyEwt8lz5JW4gk1ylB7abPSmnN9IUzwv2YVi+i3N4QV78UaBPxYMhUaQtXT8G2c03njdpMtkcNajc28sLJCXiRqg84sARDKharH2ZXUpKTwNBP0N04dpTUX85cNRP/dGd44UR4rBTa5iDa4FPDAC9VM6DmmK+bYrjlmCePPaMjncePgmsexR9udTk2pvSaV7CgbmNE5f/PSdA2V+eWEIq0kwMvVkgQIbAlv3wP1TDMM+JsaqIieaKr76/0FDIIKCkW7x2PurpWifUyEHVPUgjnHinjP0gADR2z1bB7nCt4K9j8PpXhV9/Zl+Wh8pdauwxPQavIYgVnDoQ0MYmwisOsrVk7srobsF+x423++4nFzhvG2uJwBbvUXjIflTDdfsSTy95VUPAZT87mycDkKstN6Jjzb28GvZf5yp8//GL/iFwVQFDzsrsSe+PAEqmKn9zkq189/yv5FjARVq79a7aA5dqgHOOI+Bv2qrFwEqFt7ZFLmVnXxzbjzquKuNPkpE2VB4XgZSbt5xtUp3Tth8YiTb0Z3+EKkGC3p2zdBdgZBDsx8zCk/4cQe1loqL/06X6O9Gufv3tF8rs9cE6SnY1QYNlpmZpzM2yVwpY/BB7joC1iH9FkFZ2gxyr+nfEh4nBdEksVzxPf+kTI+GFZj0yyrzTCPZYOE8LCrWKsrmMf7K/0lazKms3/5J8j8+Q9HNmZscNXIOxStx5i39/3t2IFmnbv12dE8h6zdlNMeVyN8wkU6+KDAtOlo9hiJMCX8E1a5edBvmj6Qud1uhANGnzhJ3ST4MzZo4fxPsWCSD6E92mHWn1nJqS+DDeUJhW28yzxOITvg2p/2p3hWWsL1mEl8M1wfOEEmTFf3766BdbMOdhOo52LD5aqZX/9xeHj6kItv8bOVwk7V9rJqKh9pydZFkOXQ0Xbx9YsE4caovHndlLuyFJ03LvViJUYIpXD9YJhL+wSeKhNruXckLx2qiv1MwJQaAqbmg0IAkh9Q0SZI4byC8s7n/yQRkGCRG/jxDW7WYSWX1wOIaz0CtwNxJVGMJ8CUy97f2w3MdVr+nqSg6YmGHNAAAA='}
           name={'Silo'}
