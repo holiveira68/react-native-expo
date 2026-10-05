@@ -75,5 +75,4 @@ Instalação do Expo Router
 - Colocar a tela inicial (componente) na pasta app (index.js)
 - Rodar a etapa 6 (npx expo start --clear)
 
- - Posso utilizar mais de um tipo de navegação no aplicativo?
-R: Sim.
+
