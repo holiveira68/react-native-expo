@@ -24,10 +24,10 @@ Executado em diversos ambientes.
 R: É um ambiente de execução (runtime) que permite rodar JavaScript fora do navegador, diretamente no computador ou em um servidor. Ele usa o motor V8 do Google Chrome e é o que possibilita construir back-ends, APIs, scripts e ferramentas de linha de comando em JavaScript.
 
 - O que é o NPM?
-R: Node Package Manager - Gerenciador de pacotes do Node - permite instalar/atualizar, desinstalar e executar scripts, e um projeto NODE
+R: Node Package Manager - Gerenciador de pacotes do Node - permite instalar/atualizar, desinstalar e executar scripts, em um projeto NODE
 
 - O que é a biblioteca React (core - núcleo/base)?
-R:(É o CORE - Núcleo para desenvolver interfaces com o usuário) É uma biblioteca JavaScript para construção de interfaces de usuário (UI), criada pelo Facebook (Meta). Seu foco é a camada de visualização (a "V" do MVC), permitindo criar componentes reutilizáveis que atualizam a tela automaticamente quando os dados mudam (através do conceito de estado). Dispositivos moveis, WEB e até Desktop. (react-dom traz as tags de html para a web, ex:  enquanto o react-native traz os componentes nativos para o mobile, ex: )
+R:(É o CORE - Núcleo para desenvolver interfaces com o usuário) É uma biblioteca JavaScript para construção de interfaces de usuário (UI), criada pelo Facebook (Meta). Seu foco é a camada de visualização (a "V" do MVC), permitindo criar componentes reutilizáveis que atualizam a tela automaticamente quando os dados mudam (através do conceito de estado). Dispositivos moveis, WEB e até Desktop. (react-dom traz as tags de html para a web, ex:  enquanto o react-native traz os componentes nativos para o mobile)
 
 - O que é a biblioteca React Native?
 R: É uma biblioteca que fornece os componentes necessários para desenvolver aplicativos para dispositivos móveis (nativos) IOs e Android. Especifico para desenvolvimento Mobile, utilizando componentes nativos (IMAGE, VIEW, TEXT, etc) 
