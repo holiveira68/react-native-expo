@@ -14,7 +14,6 @@ Flexibilidade	      Alta — você decide como estruturar	                      
 Exemplo	              React, Lodash	                                                 Angular, Expo, Django
                       Supre os recursos                                              Supre a arquitetura, responde "Como" resolver o problema
 			  
-
 Resumindo: com uma biblioteca, você é quem está no comando; com um framework, ele é quem dita as regras do jogo.
 
 - O que é o JavaScript?
@@ -24,23 +23,24 @@ Executado em diversos ambientes.
 - O que é Node.js?
 R: É um ambiente de execução (runtime) que permite rodar JavaScript fora do navegador, diretamente no computador ou em um servidor. Ele usa o motor V8 do Google Chrome e é o que possibilita construir back-ends, APIs, scripts e ferramentas de linha de comando em JavaScript.
 
+- O que é o NPM?
+R: Node Package Manager - Gerenciador de pacotes do Node - permite instalar/atualizar, desinstalar e executar scripts, e um projeto NODE
+
 - O que é a biblioteca React (core - núcleo/base)?
 R:(É o CORE - Núcleo para desenvolver interfaces com o usuário) É uma biblioteca JavaScript para construção de interfaces de usuário (UI), criada pelo Facebook (Meta). Seu foco é a camada de visualização (a "V" do MVC), permitindo criar componentes reutilizáveis que atualizam a tela automaticamente quando os dados mudam (através do conceito de estado). Dispositivos moveis, WEB e até Desktop. (react-dom traz as tags de html para a web, ex:  enquanto o react-native traz os componentes nativos para o mobile, ex: )
 
 - O que é a biblioteca React Native?
 R: É uma biblioteca que fornece os componentes necessários para desenvolver aplicativos para dispositivos móveis (nativos) IOs e Android. Especifico para desenvolvimento Mobile, utilizando componentes nativos (IMAGE, VIEW, TEXT, etc) 
 
-- O que é a framework Expo?
-R: É um framework construído sobre o React Native que simplifica o desenvolvimento de apps móveis. Ele oferece ferramentas prontas (CLI, sistema de build, APIs para câmera, notificações, localização etc.) que eliminam boa parte da configuração nativa manual (Xcode/Android Studio), facilitando testar o app direto no celular via o aplicativo Expo Go. (É um ecosistema para desenvolvimento mobile)
-
-- O que é o NPM?
-R: Node Package Manager - Gerenciador de pacotes do Node - permite instalar/atualizar, desinstalar e executar scripts, e um projeto NODE
-
 - O StyleSheet do React Native tem todas as propriedades da Web? (CSS)
 R: Não. Mas possui as principais, já que o foco é Mobile.
 
 - Todas as propriedades do StyleSheet do React Native funcionam para iOS e Android?
 R: Não. Algumas propriedades são específicas para iOS e outras para Android, mas a maioria funciona para os dois sistemas.  
+
+
+- O que é a framework Expo?
+R: É um framework construído sobre o React Native que simplifica o desenvolvimento de apps móveis. Ele oferece ferramentas prontas (CLI, sistema de build, APIs para câmera, notificações, localização etc.) que eliminam boa parte da configuração nativa manual (Xcode/Android Studio), facilitando testar o app direto no celular via o aplicativo Expo Go. (É um ecosistema para desenvolvimento mobile)
 
 - Qual o papel da pasta app no Expo Router?
 R: É nela que ficam as telas (componentes) da aplicação. Cada arquivo dentro da pasta app é uma tela, e a pasta em si é o ponto de partida para a navegação.
