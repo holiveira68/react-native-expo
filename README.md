@@ -75,4 +75,40 @@ Instalação do Expo Router
 - Colocar a tela inicial (componente) na pasta app (index.js)
 - Rodar a etapa 6 (npx expo start --clear)
 
+- AsyncStorage
+- Scroll View x FlatList
+- Zustand
+- CRUD
+
+************************************
+
+---- Parte 2 - Avaliação 2 ---------
+
+************************************
+
+*** AsyncStorage ***
+
+- Para que serve o AsyncStorage?
+R: É uma forma de armazenar dados localmente no dispositivo, de forma assíncrona.
+- Salva os dados mesmo com o App fechado (exceto se desinstalar)
+- Só salva um tipo de dado - String
+- Pode utilizar o JSON para salvar objetos (array, objeto, etc...)
+
+- Quais tipos de valores (dados) são aceitos pelo AsyncStorage?
+R: String (podendo utilizar o JSON para converter array, objeto, etc...)
+
+- Quais as operações básicas do AsyncStorage?
+R: SetItem, GetItem, RemoveItem (e Clear)
+
+- o AsyncStorage é uma função assincrona?
+R: Sim. Por isso precisamos utilizar o await antes de chamar qualquer operação. 
+
+
+
+
+***
+- AsyncStorage
+
+- useState muda o valor do componente e renderiza novamente, só é válida para a sessão que for aberta, caso feche a aplicação perde os dados.
+- Para não perder os dados, usar o AsyncStorage, onde ele salva os dados localmente no dispositivo, só perde se for desinstalado o app
 

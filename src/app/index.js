@@ -3,15 +3,23 @@ import { Link} from 'expo-router';
 import {Image} from 'expo-image'; 
 import {useEffect} from 'react';
 import {useRouter} from 'expo-router';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function LoadingScreen() {
 const router = useRouter();
 
-useEffect(()=> {
-    setTimeout(() => {
-        router.replace('/login');
-    }, 2000); 
-}, []);
+ useEffect(() => {
+        const checkLogin = async () => {
+            const token = await AsyncStorage.getItem("token")
+            if (token) {
+                router.replace('/home')
+            } else {
+                router.replace('/login')
+            }
+        }
+
+        setTimeout(() => {checkLogin()}, 2000);
+    }, []);
 
 
     return (
