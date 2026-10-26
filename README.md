@@ -91,8 +91,6 @@ Instalação do Expo Router
 - Para que serve o AsyncStorage?
 R: É uma forma de armazenar dados localmente no dispositivo, de forma assíncrona.
 - Salva os dados mesmo com o App fechado (exceto se desinstalar)
-- Só salva um tipo de dado - String
-- Pode utilizar o JSON para salvar objetos (array, objeto, etc...)
 
 - Quais tipos de valores (dados) são aceitos pelo AsyncStorage?
 R: String (podendo utilizar o JSON para converter array, objeto, etc...)
@@ -104,11 +102,10 @@ R: SetItem, GetItem, RemoveItem (e Clear)
 R: Sim. Por isso precisamos utilizar o await antes de chamar qualquer operação. 
 
 
-
-
-***
+*** Observações ***
 - AsyncStorage
 
 - useState muda o valor do componente e renderiza novamente, só é válida para a sessão que for aberta, caso feche a aplicação perde os dados.
 - Para não perder os dados, usar o AsyncStorage, onde ele salva os dados localmente no dispositivo, só perde se for desinstalado o app
+- No caso de WEB, utilizará a LocalStorage (verificar com F12, em Application > Storage > Local Storage)
 
