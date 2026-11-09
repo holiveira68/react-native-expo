@@ -82,14 +82,14 @@ Instalação do Expo Router
 
 ************************************
 
----- Parte 2 - Avaliação 2 ---------
+***  -- Parte 2 - Avaliação 2 -- ***
 
 ************************************
 
 *** AsyncStorage ***
 
 - Para que serve o AsyncStorage?
-R: É uma forma de armazenar dados localmente no dispositivo, de forma assíncrona.
+R: É uma forma de armazenar dados localmente no dispositivo, de forma assíncrona. Uma vez o aplicativo é fechado, as informações são salvas quando for reaberto, não precisa "logar" novamente (exemplo)
 - Salva os dados mesmo com o App fechado (exceto se desinstalar)
 
 - Quais tipos de valores (dados) são aceitos pelo AsyncStorage?
@@ -108,4 +108,28 @@ R: Sim. Por isso precisamos utilizar o await antes de chamar qualquer operação
 - useState muda o valor do componente e renderiza novamente, só é válida para a sessão que for aberta, caso feche a aplicação perde os dados.
 - Para não perder os dados, usar o AsyncStorage, onde ele salva os dados localmente no dispositivo, só perde se for desinstalado o app
 - No caso de WEB, utilizará a LocalStorage (verificar com F12, em Application > Storage > Local Storage)
+
+09.11.26
+
+- ScroolView x FlatList
+------------------------
+- Qual a diferença da View para a ScrollView?
+R.  É o componente de layout mais básico (um contêiner genérico, equivalente à <div> na web) - estática, enquanto a ScrollView é um contêiner especial que permite a rolagem (vertical ou horizontal) do seu conteúdo.
+
+- Qual a diferenla do ScrollView para o FlatList? Quando devo usar cada um deles?
+R. 
+ - ScroolView renderiza todos os componentes filhos e carrega todos os dados de uma só vez na memória.
+    . Para conteúdos curtos e estáticos 
+ 
+ - FlatList utiliza virtualização (carregamento sob demanda). Ele renderiza apenas os itens que estão visíveis na tela (mais uma pequena margem/buffer) e vai criando ou destruindo os elementos conforme você rola.
+    .  Para listas longas, dinâmicas ou de tamanho desconhecido
+  
+- Quais as 3 propriedades principais do FlatList?
+  1) data - Recebe a matriz (array) de dados que serão renderizados na lista.
+  2) renderItem - É uma função que recebe cada item do array data e retorna o componente visual (JSX) que representa esse item na tela.
+  3) keyExtractor - É uma função responsável por extrair e retornar uma chave única (string - primary-key ou chave primária) para cada item da lista, ajudando o React Native a identificar quais itens mudaram, foram adicionados ou removidos.
+
+
+- Zustand
+- CRUD
 
