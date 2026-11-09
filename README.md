@@ -129,7 +129,8 @@ R: Sim. Por isso precisamos utilizar o await antes de chamar qualquer operação
   2) renderItem - É uma função que recebe cada item do array data e retorna o componente visual (JSX) que representa esse item na tela.
   3) keyExtractor - É uma função responsável por extrair e retornar uma chave única (string - primary-key ou chave primária) para cada item da lista, ajudando o React Native a identificar quais itens mudaram, foram adicionados ou removidos.
 
-
+_________________________________________________________________________________
+### Próximas aulas
 - Zustand
 - CRUD
 
